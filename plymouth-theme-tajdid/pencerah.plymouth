@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Pencerah
+Description=Wallpaper only
+ModuleName=script
+
+[script]
+ImageDir=/lib/plymouth/themes/pencerah
+ScriptFile=/lib/plymouth/themes/pencerah/pencerah.script

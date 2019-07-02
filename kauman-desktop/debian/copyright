@@ -1,0 +1,11 @@
+Format: kauman-desktop
+Upstream-Name: kauman-desktop
+Upstream-Contact: Pengembang Tajdid Linux
+Source: http://www.tajdidlinux.org
+
+Files: dhuhacerah.png, malambarokah.png, senjakemuning.png
+Copyright: 	2011, Pengembang Tajdid Linux
+
+License: GPL v2
+	This software is released under GPLv2 license - 
+	see the /usr/share/common-licenses/GPL-2.

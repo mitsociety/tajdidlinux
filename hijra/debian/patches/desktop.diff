@@ -1,0 +1,20 @@
+Description:
+ * Remove Encoding field.
+ * Add X-Islamic-Software category.
+ * Replace irrevelant categories with Utility.
+Author: أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>
+--- hijra.orig/hijra-autostart.desktop
++++ hijra/hijra-autostart.desktop
+@@ -1,5 +1,4 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Name=Hijra Applet
+ Name[ar]=بريمج هجرة
+ Comment=Hijri calendar in system tray icon
+@@ -10,5 +9,5 @@
+ Icon=gnome-calendar
+ X-KDE-autostart-after=panel
+ StartupNotify=false
+-Categories=GTK;Monitor;System;X-Red-Hat-Base;
++Categories=X-Islamic-Software;Utility
+ 

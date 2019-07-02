@@ -1,0 +1,13 @@
+Source: kauman-desktop
+Section: gnome
+Priority: extra
+Maintainer: Pengembang Tajdid <tajdid-dev@googlegroups.com>
+Build-Depends: debhelper (>= 7), cdbs, quilt
+Standards-Version: 3.8.3
+Homepage: http://www.tajdidlinux.org
+
+Package: kauman-desktop
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, shiki-colors, shiki-brave-theme, gnome-colors, ttf-mscorefonts-installer
+Description: Ragam kesenian tampilan desktop
+  Ragam kesenian tampilan desktop bawaan Kauman

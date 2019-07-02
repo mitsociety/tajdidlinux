@@ -1,0 +1,5 @@
+?package(hijra-applet):\
+  needs="X11"\
+  section="Applications/Education"\
+  title="Hijri Applet"\
+  command="/usr/bin/HijriApplet"

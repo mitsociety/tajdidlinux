@@ -1,0 +1,13 @@
+Source: plymouth-theme-tajdid
+Section: x11
+Priority: extra
+Maintainer: Pengembang Tajdid Linux <tajdid-dev@googlegroups.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: http://www.tajdidlinux.org
+
+Package: plymouth-theme-tajdid
+Architecture: all
+Depends: plymouth (>= 0.8.1-1), plymouth-label, ${misc:Depends}
+Description: Default Tajdid Kauman plymouth theme 
+ Plymouth theme for Tajdid Linux "Kauman"

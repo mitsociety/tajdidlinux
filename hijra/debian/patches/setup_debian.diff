@@ -1,0 +1,16 @@
+Description: Install HijriApplet as a script, install documentation in
+ /usr/share/doc/python-hijra
+Author: أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>
+--- a/setup.py
++++ b/setup.py
+@@ -11,8 +11,8 @@
+       url='http://hijra.ojuba.org/',
+       license='Waqf',
+       py_modules=['hijri','HijriCal'],
+-      data_files=[('/usr/share/doc/hijra-python', glob('*.html') ),
+-                  ('/usr/bin',['HijriApplet']),
++      scripts=['HijriApplet'],
++      data_files=[('/usr/share/doc/python-hijra', glob('*.html') ),
+                   ('/etc/xdg/autostart',['hijra-autostart.desktop']),
+       ]
+ )

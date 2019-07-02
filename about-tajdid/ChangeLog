@@ -1,0 +1,6 @@
+
+06 juli 2011
+* program mulai dioprek
+* bisa menampilkan versi kernel
+* masih ada bug untuk parsing lsb_release
+

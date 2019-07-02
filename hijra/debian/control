@@ -1,0 +1,47 @@
+Source: hijra
+Section: non-free/misc
+Priority: extra
+Maintainer: Debian Islamic Maintainers <debian-islamic-maintainers@lists.alioth.debian.org>
+Uploaders: أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: python-support (>= 0.5.3), python-all (>= 2.3.5-11), gettext
+Standards-Version: 3.9.0
+Homepage: http://hijra.ojuba.org
+Vcs-Git: git://git.debian.org/git/debian-islamic/packages/hijra.git
+Vcs-Browser: http://git.debian.org/?p=debian-islamic/packages/hijra.git
+
+Package: python-hijra
+Section: non-free/python
+Architecture: all
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends}, ${python:Depends}
+Provides: ${python:Provides}
+Replaces: hijra-python
+Conflicts: hijra-python
+Description: Hijri Islamic Calendar converting functions for python
+ Hijri Islamic Calendar converting functions, based on an enhanced algorithm
+ designed by Muayyad Saleh Alsadi.
+ It can be used to implement applications, gdesklets or karamba ..etc
+ .
+ This algorithm is based on integer operations which that there is no round
+ errors (given accurate coefficients) the accuracy of this algorithm is based
+ on 3 constants (p, q and a) where p/q is the full months percentage [ gcd(p,q)
+ must be 1 ] currently it is set to 191/360 which mean that there is 191 months
+ having 30 days in a span of 360 years, other months are 29 days, and a is just
+ a shift.
+
+Package: hijra-applet
+Architecture: all
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends}, ${python:Depends}, python-hijra, python-gtk2, python-notify, python-eggtrayicon
+Recommends: python-dbus
+Description: Hijri Islamic Calendar tray applet
+ Hijri Tray Applet for GNOME (also works with KDE) that uses Hijra Algorithm by
+ Muayyad Saleh Alsadi provided by python-hijra package.
+ .
+ This algorithm is based on integer operations which that there is no round
+ errors (given accurate coefficients) the accuracy of this algorithm is based
+ on 3 constants (p, q and a) where p/q is the full months percentage [ gcd(p,q)
+ must be 1 ] currently it is set to 191/360 which mean that there is 191 months
+ having 30 days in a span of 360 years, other months are 29 days, and a is just
+ a shift.

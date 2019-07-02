@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	ln HijriApplet.py HijriApplet
+
+override_dh_clean:
+	dh_clean HijriApplet
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=python-hijra

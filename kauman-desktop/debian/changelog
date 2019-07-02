@@ -1,0 +1,103 @@
+kauman-desktop (0.3-9) kauman; urgency=low
+
+  * perkecil ukuran default ikon scalable menjadi 16
+
+ -- Azharuddin <azhargiri@gmail.com>  Wed, 22 Jun 2011 08:14:12 +0700
+
+kauman-desktop (0.3-8) kauman; urgency=low
+
+  * buang ikon ukuran 48 dan 64
+  * perkecil ukuran default scalable ke 32
+
+ -- Azharuddin <azhargiri@gmail.com>  Wed, 22 Jun 2011 07:31:49 +0700
+
+kauman-desktop (0.3-7) kauman; urgency=low
+
+  * hapus tanda petik (quote) pada kauman-desktop/*
+  * resize ikon scalable/place/start-here.svg menjadi ukuran 42
+
+ -- Azharuddin <azhargiri@gmail.com>  Fri, 10 Jun 2011 18:17:48 +0700
+
+kauman-desktop (0.3-6) kauman; urgency=low
+
+  * Use default system font-name
+
+ -- Azharuddin <azhargiri@gmail.com>  Sat, 04 Jun 2011 08:42:26 +0700
+
+kauman-desktop (0.3-5) kauman; urgency=low
+
+  * add installation path for kauman-desktop directory (missing in previous version :(
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 02 Jun 2011 21:29:56 +0700
+
+kauman-desktop (0.3-4) kauman; urgency=low
+
+  * perbaiki path instalasi kauman-ikon
+  * ganti gconftool-2 config source dari mandatory ke defaults pada debian/kauman-desktop.postinst
+  * hapus ikon berukuran 128
+  * ganti Section ke gnome di debian/control
+  * pisahkan aturan untuk gconf (di kauman-desktop)
+  * sederhanakan debian/kauman-desktop.postinst
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 02 Jun 2011 11:02:36 +0700
+
+kauman-desktop (0.3-3) kauman; urgency=low
+
+  * tambah instalasi kauman-wallpapers.xml
+  * perbaiki kauman-desktop.postinst agar :
+    - menjadikan tema gtk Shiki-Brave sebagai default
+    - menjadikan ikon Kauman sebagai default
+    - menjadikan tema metacity Shiki Colors Metacity sebagai default
+    - menjadikan gmabar dhuhacerah.png sebagai gambar latar default
+  * buang Makefile
+
+ -- Azharuddin <azhargiri@gmail.com>  Tue, 31 May 2011 11:33:04 +0700
+
+kauman-desktop (0.3-2) kauman; urgency=low
+
+  * atur icon_theme default ke Kauman
+  * tambah inherits ke gnome-brave untuk kauman-ikon
+  * atur default ikon ke Kauman
+  * tambah long-description
+  * buang dependensi shiki-colors-murrine
+  * tambah dependensi shiki-colors dan shiki-brave-theme
+
+ -- Azharuddin <azhargiri@gmail.com>  Mon, 23 May 2011 16:44:16 +0700
+
+kauman-desktop (0.3-1) kauman; urgency=low
+
+  * rilis baru
+  * tambah kauman-ikon
+  * tambahkan dependensi atas shiki-colors-murrine dan gnome-colors 
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 19 May 2011 14:00:13 +0700
+
+kauman-desktop (0.2-4) kauman; urgency=low
+
+  * Perbaiki syntax pada gconftool-2 di debian/kauman-desktop.postinst
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 19 May 2011 12:09:44 +0700
+
+kauman-desktop (0.2-3) kauman; urgency=low
+
+  * Perbaiki syntax error di debian/kauman-desktop.postinst
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 19 May 2011 10:58:33 +0700
+
+kauman-desktop (0.2-2) kauman; urgency=low
+
+  * tambah cdbs untuk build-depends
+  * gunakan berkas install untuk memasang gambar-latar
+  * ganti rules ke metode debhelper
+
+ -- Azharuddin <azhargiri@gmail.com>  Thu, 19 May 2011 08:41:17 +0700
+
+kauman-desktop (0.2-1) kauman; urgency=low
+
+  * Rilis perdana
+  * Tambah gambar-latar : 
+  	- dhuhacerah.png
+  	- malambarokah.png
+  	- senjakemuning.png
+
+ -- Azharuddin <azhargiri@gmail.com>  Mon, 16 May 2011 15:11:42 +0700

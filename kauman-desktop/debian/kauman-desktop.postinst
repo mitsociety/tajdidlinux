@@ -1,0 +1,17 @@
+#! /bin/sh
+set -e
+
+KDDIR=/usr/share/kauman-desktop
+
+case "$1" in
+	configure)
+		for file in `ls $KDDIR`; do
+			while read setting; do
+				$(gconftool-2 --direct --config-source \
+							xml:readwrite:/etc/gconf/gconf.xml.defaults \
+							--type string --set $setting);
+			done < "$KDDIR/$file"				
+		done
+esac
+
+exit 0
